@@ -12,7 +12,7 @@ import { HostService } from 'src/app/comum/servicos/host.service';
 export class DetalhesHostComponent implements OnInit {
 
   ip: string = '';
-  host: DetalhesHostDTO = MOCK_DETALHES_HOST_DTO[0];
+  host!: DetalhesHostDTO;
 
   constructor(public route: ActivatedRoute, private hostService: HostService) {}
 

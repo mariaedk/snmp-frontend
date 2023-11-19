@@ -1,8 +1,6 @@
-import { Component, Host, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { HostDTO } from 'src/app/comum/dto/HostDTO';
-import { ARRAY_HOST_DTO } from 'src/app/comum/mock/HostDTOMock';
 import { HostService } from 'src/app/comum/servicos/host.service';
 
 @Component({
@@ -12,16 +10,16 @@ import { HostService } from 'src/app/comum/servicos/host.service';
 })
 export class ListarClientesComponent implements OnInit {
 
-  listaHosts$ = new Observable<HostDTO[]>();
   listaHosts = new Array<HostDTO>();
 
   constructor(private hostService: HostService, public router: Router) {}
 
   ngOnInit(): void {
     setInterval(() => {
-      this.listaHosts$ = this.hostService.getListaHosts();
-    }, 5000);
-    this.listaHosts = ARRAY_HOST_DTO;
+      this.hostService.getListaHosts().subscribe(hosts => {
+        this.listaHosts = hosts;
+      });
+    }, 10000);
   }
 
   detalhesHost(ip: string) {
