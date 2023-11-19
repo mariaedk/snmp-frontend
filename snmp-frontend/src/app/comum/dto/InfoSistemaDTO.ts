@@ -4,5 +4,5 @@ export interface InfoSistemaDTO {
     sistemaOperacional: string,
     totalUsuarios: string,
     nucleoProcessadores: string,
-    cpuOcioso: string
+    cpuOcisoso: string
 }

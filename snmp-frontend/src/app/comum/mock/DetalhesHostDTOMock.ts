@@ -11,7 +11,7 @@ export const MOCK_DETALHES_HOST_DTO: DetalhesHostDTO[] = [
             memoriaTotal: 2,
             memoriaUsada: 2,
             memoriaRam: "2",
-            procetagemMemoria: "2"
+            porcetagemMemoria: "2"
         },
         infoSistemaDTO: {
             hardware: "INTEL",
@@ -19,7 +19,7 @@ export const MOCK_DETALHES_HOST_DTO: DetalhesHostDTO[] = [
             sistemaOperacional: "windows",
             totalUsuarios: "2",
             nucleoProcessadores: "8",
-            cpuOcioso: "90"
+            cpuOcisoso: "90"
         },
         infoProcessosDTO: [
             {
