@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DetalhesHostDTO } from 'src/app/comum/dto/DetalhesHostDTO';
-import { HostDTO } from 'src/app/comum/dto/HostDTO';
 import { MOCK_DETALHES_HOST_DTO } from 'src/app/comum/mock/DetalhesHostDTOMock';
-import { ARRAY_HOST_DTO } from 'src/app/comum/mock/HostDTOMock';
 import { HostService } from 'src/app/comum/servicos/host.service';
 
 @Component({
