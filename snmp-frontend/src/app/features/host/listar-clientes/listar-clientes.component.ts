@@ -22,7 +22,9 @@ export class ListarClientesComponent implements OnInit {
     }, 10000);
   }
 
-  detalhesHost(ip: string) {
-    this.router.navigate([`/clientes/host/${ip}`])
+  detalhesHost(host: HostDTO) {
+    if (host.pingRede) {
+      this.router.navigate([`/clientes/host/${host.ipHost}`]);
+    }
   }
 }
