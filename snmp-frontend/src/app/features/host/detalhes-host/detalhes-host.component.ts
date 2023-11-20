@@ -21,6 +21,11 @@ export class DetalhesHostComponent implements OnInit {
     this.hostService.getDetalhesHost(this.ip).subscribe(host => {
       this.host = host;
     });
+    setInterval(() => {
+      this.hostService.getDetalhesHost(this.ip).subscribe(host => {
+        this.host = host;
+      });
+    }, 30000)
   }
 
 }

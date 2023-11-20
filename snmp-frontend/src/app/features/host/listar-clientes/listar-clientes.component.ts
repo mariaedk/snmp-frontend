@@ -15,6 +15,9 @@ export class ListarClientesComponent implements OnInit {
   constructor(private hostService: HostService, public router: Router) {}
 
   ngOnInit(): void {
+    this.hostService.getListaHosts().subscribe(hosts => {
+      this.listaHosts = hosts;
+    });
     setInterval(() => {
       this.hostService.getListaHosts().subscribe(hosts => {
         this.listaHosts = hosts;

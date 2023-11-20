@@ -10,8 +10,8 @@
     </header>
     <div class="separator-info">
         <p> <b>Nome do host:</b> {{ host.infoHostDTO.nomeHost }}</p>
-        <p> <b>Hora do último reinicio:</b> {{ host.infoHostDTO.horaUltimoReinicio }}</p>
-        <p> <b>Quantidade de dias ativos:</b> {{ host.infoHostDTO.diasAtivos }}</p>
+        <p> <b>Horas ativas:</b> {{ host.infoHostDTO.horaUltimoReinicio }}</p>
+        <p> <b>Dias desde última reinicialização:</b> {{ host.infoHostDTO.diasAtivos }}</p>
     </div>
 
     <header class="titulo-principal">
@@ -43,21 +43,23 @@
         <hr>
     </header>
     <div class="separator-info">
-        <table  class="table table-hover table-dark">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">Processo</th>
-                <th scope="col">Tipo</th>
-                <th scope="col">Quantidade de memória</th>
-              </tr>
-            </thead>
-            <tbody *ngFor="let host of host.infoProcessosDTO">
-              <tr class="hover">
-                <td>{{ host.processo }}</td>
-                <td>{{ host.tipoProcesso }}</td>
-                <td>{{ host.memoriaProcesso }}</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="table-responsive">
+            <table class="table table-hover table-dark">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Processo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Quantidade de memória</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let host of host.infoProcessosDTO">
+                    <tr class="hover">
+                        <td>{{ host.processo }}</td>
+                        <td>{{ host.tipoProcesso }}</td>
+                        <td>{{ host.memoriaProcesso }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div> 
+</div>

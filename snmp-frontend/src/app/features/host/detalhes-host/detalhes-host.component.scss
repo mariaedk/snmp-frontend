@@ -11,5 +11,9 @@
 
     .separator-info {
         width: 80%;
+
+        .table-responsive {
+            max-height: 300px;
+        }
     }
 }
