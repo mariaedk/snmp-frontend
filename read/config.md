@@ -37,4 +37,5 @@ OBS: Esta etapa é necessária tanto nas máquinas clientes quanto na máquina s
 
 ![imagem (5)](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/07cb39e5-34c7-4da4-a686-2cafa5e39188)
 
-* Clicar em "Aplicar" e "Ok"
+> [!NOTE]
+>Clicar em "Aplicar" e "Ok" em todas as alterações!
