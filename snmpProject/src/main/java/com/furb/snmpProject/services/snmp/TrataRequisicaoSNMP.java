@@ -142,11 +142,18 @@ public class TrataRequisicaoSNMP {
 
            if(!retorno.isEmpty()) {
                String[] arr = retorno.split(", ");
-                        arr[0] = arr[0].substring(arr[0].indexOf(")") + 1);
-                        arr[1] = arr[1].substring(0,5);
+               if (arr.length > 1) {
+                   arr[0] = arr[0].substring(arr[0].indexOf(")") + 1);
+                   arr[1] = arr[1].substring(0,5);
 
-               infoHost.setDiasAtivos(arr[0]);
-               infoHost.setHoraUltimoReinicio(arr[1]);
+                   infoHost.setDiasAtivos(arr[0]);
+                   infoHost.setHoraUltimoReinicio(arr[1]);
+               } else {
+                   infoHost.setDiasAtivos("0");
+                   infoHost.setHoraUltimoReinicio(arr[0]);
+               }
+
+
            }
 
         } catch (Exception e) {

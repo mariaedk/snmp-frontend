@@ -22,7 +22,7 @@ export class ListarClientesComponent implements OnInit {
       this.hostService.getListaHosts().subscribe(hosts => {
         this.listaHosts = hosts;
       });
-    }, 10000);
+    }, 15000);
   }
 
   detalhesHost(host: HostDTO) {
