@@ -1,3 +1,4 @@
+> [!NOTE]
 # Monitoramento SNMP
 
 ## Objetivo
@@ -7,6 +8,9 @@ O projeto por meio de uma máquina servidor, tem o objetivo de monitorar uma ou 
 É necessário clonar o repositório em uma pasta do seu computador, e em seguida seguir os passos:
 
 [Configurações](https://github.com/mariaedk/snmp-sistemas-operacionais/blob/main/read/config.md)
+
+>[!IMPORTANT]
+
 
 ### Back-end
 * Tecnologias utilizadas: Java versão 21, framework Springboot, banco de dados em memória H2
