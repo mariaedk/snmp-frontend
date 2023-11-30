@@ -9,11 +9,34 @@ O projeto por meio de uma máquina servidor, tem o objetivo de monitorar uma ou 
 ### Habilitar SNMP no Windows
 OBS: Esta etapa é necessária tanto nas máquinas clientes quanto na máquina servidor
 * Acessar as configurações do windows em "Gerenciar recursos opcionais"
+  
+![print1](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/56614ba2-9b16-4238-9e33-f04063c2b661)
+
 * Selecionar "Adicionar Recurso"
+
+![print2](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/98afc5cf-68a9-443b-92fd-1996a4804370)
+
+> [!IMPORTANT]
+> **Configurações iniciais**
+>
+> >[Configurar máquina](https://www.google.com.br/)
+
+  
 * Digitar "Protocolo SNMP" e selecionar a opção. Clicar em Instalar
+
+![print3](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/8d820ff8-e446-430e-a015-d7b98fade42b)
+
+  
 * É necessário reiniciar o computador após a instalação do recurso
 * Após reiniciar, acessar "Serviços" do Windows e verificar se o "Protocolo SNMP" está adicionado
-* Clicar com o botão direito do mouse sob "Protocolo SNMP" e ir na aba "Segurança"
+* Clicar com o botão direito do mouse sob "Protocolo SNMP" e acessar propriedades
+![imagem](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/cfc2b5ac-f99f-4757-be00-5be164bf3b25)
+
+* Na aba "Segurança", marcar a opção "Aceitar pacotes de qualquer host"
+![imagem (2)](https://github.com/mariaedk/snmp-sistemas-operacionais/assets/62608046/a3ea471e-d908-4b5d-aad6-07ef5b5afc5e)
+
+* Nesta mesma tela, clicar em "Adicionar"
+
 
 ### Back-end
 * Tecnologias utilizadas: Java versão 21, framework Springboot, banco de dados em memória H2
